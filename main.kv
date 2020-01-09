@@ -1,0 +1,285 @@
+#:import FadeTransition kivy.uix.screenmanager.FadeTransition
+#:import sm kivy.uix.screenmanager
+
+<Wind_Menu>:
+    name:"screen_a"
+    BoxLayout:
+        orientation: "vertical"
+        canvas: 
+            Color:  
+                rgb: 0.3,1.5,5,0.5
+            Rectangle:
+                source:'fondo.png'
+                pos: self.pos
+                size: self.size
+        RelativeLayout:
+            size_hint: None,None
+            anchor_x:'center'
+            anchor_y:'top'
+            size: 350,750
+            Label:
+                markup: True
+                text: "[font=./STARFISH]Select an Option:[/font]" 
+                font_size: 22
+                size_hint: None,None
+                size: 700,30
+                pos: 600, 900        
+                color: [1,1,1,1]
+            Button:
+                markup: True
+                text: "[font=STARFISH][size=16]Buscar Juego[/size][/font]" 
+                size_hint: None,None
+                size: 400,100
+                pos: 750,700
+                on_release: 
+                on_press: app.root.current = "Lista de juegos"
+                background_color: [0,0,200,0.5]     
+            Button:
+                markup: True
+                text: "[font=STARFISH][size=16]Lista de Consolas[/size][/font]" 
+                size_hint: None,None
+                size: 400,100
+                pos: 750,550
+                on_release:
+                on_press: app.root.current = "Lista de consolas"
+                background_color: [0,0,200,0.5]                    
+            Button:
+                markup: True
+                text: "[font=STARFISH][size=16]Ultimos jugados[/size][/font]" 
+                size_hint: None,None
+                size: 400,100
+                pos: 750,400
+                on_release:
+                on_press: app.root.current = "Ultimos jugados"
+                background_color: [0,0,200,0.5]                
+                
+            Button:
+                markup: True
+                text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                size_hint: None,None
+                size: 150,50
+                pos: 100,175
+                background_color: [0.3,1,1,0.5]
+                on_release: 
+                on_press: root.manager.current = "Pregunta"
+                #root.manager.current = "left"
+            
+                    
+
+<Wind_Pregunta>:
+    Screen:
+        name:"Pregunta"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Color:  
+                    rgb: 0,0.5,1,0.5
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            RelativeLayout:
+                size_hint: None,None
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccione la dimension de su pantalla:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]32' pulgadas[/size][/font]"
+                    size_hint: None,None
+                    size: 450,100
+                    pos: 700,750
+                    on_release: 
+                    on_press: app.root.current = "screen_a"
+                    background_color: [0,0,200,0.5]
+                    on_release: root.manager.FadeTransition = "left"
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]40' pulgadas[/size][/font]"
+                    size_hint: None,None
+                    size: 450,100
+                    pos: 700,650
+                    on_press: root.current = "screen_a"
+                    background_color: [0,0,200,0.5]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]42' pulgadas[/size][/font]"
+                    size_hint: None,None
+                    size: 450,100
+                    pos: 700,550
+                    on_press: root.current = "screen_a"
+                    background_color: [0,0,200,0.5]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]50' pulgadas[/size][/font]"
+                    size_hint: None,None
+                    size: 450,100
+                    pos: 700,450
+                    on_press: root.current = "screen_a"
+                    background_color: [0,0,200,0.5]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]60' pulgadas[/size][/font]"
+                    size_hint: None,None
+                    size: 450,100
+                    pos: 700,350
+                    on_press: root.current = "screen_a"
+                    background_color: [0,0,200,0.5]
+                
+#<Wind_Buscarjuego>:
+    Screen:
+        name:"Lista de juegos"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Color:  
+                    rgb: 0,0,0,0
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            RelativeLayout:
+                size_hint: None,None
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Lista de juegos:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "screen_a"
+                    #root.manager.current = "left"
+
+    Screen:
+        name:"Lista de consolas"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Color:  
+                    rgb: 0,0,0,0
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            RelativeLayout:
+                size_hint: None,None
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Consolas:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "screen_a"
+                    #root.manager.current = "left"
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Family[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,475
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Family"
+                    #root.manager.current = "left"
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Gameboy[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 300,475
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Family"
+                    #root.manager.current = "left"
+
+
+    Screen:
+        name:"Ultimos jugados"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Color:  
+                    rgb: 0,0,0,0
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            RelativeLayout:
+                size_hint: None,None
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Ultimos jugados:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Family"
+                    #root.manager.current = "left"
+
+#screen consola
+
+#FAMILY
+    Screen:
+        name:"Family"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Color:  
+                    rgb: 0,0,0,0
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            RelativeLayout:
+                size_hint: None,None
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+
+    
+
+    #Wind_Pregunta:
+    Wind_Menu:
+    #Wind_Buscarjuego:

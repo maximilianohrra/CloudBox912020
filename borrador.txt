@@ -1,0 +1,77 @@
+                    
+
+    #PANTALLA JUEGOS
+    Screen:
+        name: "Menu Juegos"
+        BoxLayout:
+            orientation: "vertical"
+            canvas:
+                Color:
+                    rgb: [0,0,0]
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            
+            RelativeLayout:
+                size_hint: None,None
+                Label:
+                    text:"Lista de Juegos"
+                    
+                    size_hint: None,None
+                    size: 150,30
+                    pos: 550,600
+                Button:
+                    text: "Atras"
+                    size_hint: None,None
+                    size: 150,30
+                    on_press: root.current = "Menu"
+
+    #PANTALLA CONSOLAS     
+    Screen:
+        name: "Menu Consolas"
+        BoxLayout:
+            orientation: "vertical"
+            canvas:
+                Color:
+                    rgb: [0,0,0]
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            RelativeLayout:
+                size_hint: None,None
+                Label:
+                    text:"Lista de Consolas"
+                    size_hint: None,None
+                    size: 150,30
+                    pos: 550,600
+                Button:
+                    text: "Atras"
+                    size_hint: None,None
+                    size: 150,30
+                    on_press: root.current = "Menu"
+#PANTALLA HISTORIAL DE JUEGOS
+    Screen:
+        name: "Menu Historial"
+        BoxLayout:
+            orientation: "vertical"
+            canvas:
+                Color:
+                    rgb: [0,0,0]
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            RelativeLayout:
+                size_hint: None,None
+                Label:
+                    text:"Ultimos Jugadoss"
+                    size_hint: None,None
+                    size: 150,30
+                    pos: 550,600
+                Button:
+                    text: "Atras"
+                    size_hint: None,None
+                    size: 150,30
+                    on_press: root.current = "Menu"
+
+
+
