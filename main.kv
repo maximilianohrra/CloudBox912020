@@ -36,7 +36,7 @@
                 background_color: [0,0,200,0.5]     
             Button:
                 markup: True
-                text: "[font=STARFISH][size=16]Lista de Consolas[/size][/font]" 
+                text: "[font=STARFISH][size=16]Consolas[/size][/font]" 
                 size_hint: None,None
                 size: 400,100
                 pos: 750,550
@@ -184,20 +184,10 @@
                     color: [1,1,1,1]
                 Button:
                     markup: True
-                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
-                    size_hint: None,None
-                    size: 150,50
-                    pos: 100,175
-                    background_color: [0.3,1,1,0.5]
-                    on_release: 
-                    on_press: root.current = "screen_a"
-                    #root.manager.current = "left"
-                Button:
-                    markup: True
                     text: "[font=STARFISH][size=16]Family[/size][/font]" 
                     size_hint: None,None
-                    size: 150,50
-                    pos: 100,475
+                    size: 170,100
+                    pos: 100,600
                     background_color: [0.3,1,1,0.5]
                     on_release: 
                     on_press: root.current = "Family"
@@ -206,14 +196,162 @@
                     markup: True
                     text: "[font=STARFISH][size=16]Gameboy[/size][/font]" 
                     size_hint: None,None
-                    size: 150,50
-                    pos: 300,475
+                    size: 170,100
+                    pos: 300,600
                     background_color: [0.3,1,1,0.5]
                     on_release: 
-                    on_press: root.current = "Family"
+                    on_press: root.current = "Gameboy Color"
                     #root.manager.current = "left"
-
-
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16] Gameboy\nAdvance[/size][/font]" 
+                    size_hint: None,None
+                    size: 170,100
+                    pos: 500,600
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Gameboy Advance"
+                    #root.manager.current = "left" 
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16] Gameboy\nClassic[/size][/font]" 
+                    size_hint: None,None
+                    size: 170,100
+                    pos: 700,600
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Gameboy Classic"
+                    #root.manager.current = "left" 
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16] Game\nGear[/size][/font]" 
+                    size_hint: None,None
+                    size: 170,100
+                    pos: 100,480
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Game Gear"
+                    #root.manager.current = "left" 
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16] Arcade[/size][/font]" 
+                    size_hint: None,None
+                    size: 170,100
+                    pos: 300,480
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Arcade"
+                    #root.manager.current = "left" 
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16] Master\nSystem[/size][/font]" 
+                    size_hint: None,None
+                    size: 170,100
+                    pos: 500,480
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Master System"
+                    #root.manager.current = "left" 
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Neo Geo\nPocket[/size][/font]" 
+                    size_hint: None,None
+                    size: 170,100
+                    pos: 700,480
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Neo Geo Pocket"
+                    #root.manager.current = "left" 
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Nintendo \n64[/size][/font]" 
+                    size_hint: None,None
+                    size: 170,100
+                    pos: 100,350
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Nintendo64"
+                    #root.manager.current = "left" 
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Pokemon\nMini[/size][/font]" 
+                    size_hint: None,None
+                    size: 170,100
+                    pos: 300,350
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Pokemon Mini"
+                    #root.manager.current = "left" 
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]VirtualBoy[/size][/font]" 
+                    size_hint: None,None
+                    size: 170,100
+                    pos: 500,350
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "VirtualBoy"
+                    #root.manager.current = "left" 
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Play\nStation[/size][/font]" 
+                    size_hint: None,None
+                    size: 170,100
+                    pos: 700,350
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "PlayStation"
+                    #root.manager.current = "left" 
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Scum\nmvm[/size][/font]" 
+                    size_hint: None,None
+                    size: 170,100
+                    pos: 100,230
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Scummvm"
+                    #root.manager.current = "left" 
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Sega\nGenesis[/size][/font]" 
+                    size_hint: None,None
+                    size: 170,100
+                    pos: 300,230
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Sega Genesis"
+                    #root.manager.current = "left" 
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Super\nNintendo[/size][/font]" 
+                    size_hint: None,None
+                    size: 170,100
+                    pos: 500,230
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Super Nintendo"
+                    #root.manager.current = "left" 
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Wonders\nWan\nColor[/size][/font]" 
+                    size_hint: None,None
+                    size: 170,100
+                    pos: 700,230
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Wonderwancolor"
+                    #root.manager.current = "left"
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,120
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "screen_a"
+                    #root.manager.current = "left"
     Screen:
         name:"Ultimos jugados"
         BoxLayout:
@@ -253,13 +391,24 @@
         BoxLayout:
             orientation: "vertical"
             canvas: 
-                Color:  
-                    rgb: 0,0,0,0
                 Rectangle:
-                    pos: self.pos
-                    size: self.size
+                    pos: 800,350
+                    size: 500,450
+                    source:'family.png'
             RelativeLayout:
                 size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'family' * 100
                 Label:
                     markup: True
                     text: "[font=./STARFISH]Seleccionar juego:[/font]" 
@@ -278,8 +427,629 @@
                     on_release: 
                     on_press: root.current = "Lista de consolas"
 
-    
+#GAMEBOY COLOR
+    #FAMILY
+    Screen:
+        name:"Gameboy Color"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
 
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'gameboy color' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+    
+#GAMEBOY ADVANCE
+    #FAMILY
+    Screen:
+        name:"Gameboy Advance"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'gameboy advance' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+
+#GAMEBOY CLASSIC
+    #FAMILY
+    Screen:
+        name:"Gameboy Classic"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'gameboy classic' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+
+#GAME GEAR
+    Screen:
+        name:"Game Gear"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'gameboy GEAR' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+#ARCADE
+    Screen:
+        name:"Arcade"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'Arcade' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+#MASTERSYSTEM
+    Screen:
+        name:"Master System"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'MASTERSYSTEM' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+#NEOGEOPOCKET
+    Screen:
+        name:"Neo Geo Pocket"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'NEO GEO POCKET' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+#NINTENDO64
+    Screen:
+        name:"Nintendo64"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'NINTENDO64' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+#POKEMONMMINI
+    Screen:
+        name:"Pokemon Mini"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'POKEMONMINI' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+#VIRTUALBOY
+    Screen:
+        name:"VirtualBoy"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'VIRTUALBOY' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+#PLAYSTATION
+    Screen:
+        name:"PlayStation"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'PLAYSTATION' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+#SCUMMVM
+    Screen:
+        name:"Scummvm"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'SCUMMVM' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+#SEGA GENESIS
+    Screen:
+        name:"Sega Genesis"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'SEGA GENESIS' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+#SUPER NINTENDO
+    Screen:
+        name:"Super Nintendo"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'SUPER NINTENDO' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+#WONDERWANCOLOR
+    Screen:
+        name:"Wonderwancolor"
+        BoxLayout:
+            orientation: "vertical"
+            canvas: 
+                Rectangle:
+                    pos: 800,350
+                    size: 500,450
+                    #source:'family.png'
+            RelativeLayout:
+                size_hint: None,None
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+
+                    Label:
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        text_size: 100,100
+                        #pos: 450,450
+                        padding: 10, 10
+                        text:
+                            'WONDERWANCOLOR' * 100
+                Label:
+                    markup: True
+                    text: "[font=./STARFISH]Seleccionar juego:[/font]" 
+                    font_size: 22
+                    size_hint: None,None
+                    size: 700,30
+                    pos: 600, 900        
+                    color: [1,1,1,1]
+                Button:
+                    markup: True
+                    text: "[font=STARFISH][size=16]Atras[/size][/font]" 
+                    size_hint: None,None
+                    size: 150,50
+                    pos: 100,175
+                    background_color: [0.3,1,1,0.5]
+                    on_release: 
+                    on_press: root.current = "Lista de consolas"
+    #Wind_Pregunta:
+    #Wind_Pregunta:
     #Wind_Pregunta:
     Wind_Menu:
     #Wind_Buscarjuego:
